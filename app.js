@@ -219,12 +219,24 @@ const PICTURES = [
     '<polygon points="295,205 316,256 370,260 328,294 342,348 295,318 248,348 262,294 220,260 274,256"/>',
   ], lines: '' },
 ];
-const picSVG = (p, fills, interactive) => {
-  const regions = p.r.map((s, i) => s.replace(/^<(\w+)/, `<$1 class="r" data-i="${i}" fill="${fills[i] || '#fff'}"`)).join('');
-  return `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke="#222" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
-    <clipPath id="rc"><rect width="400" height="400" rx="26"/></clipPath>
-    <g clip-path="url(#rc)">${regions}<g fill="none" pointer-events="none">${p.lines}</g></g>
-    <rect x="2" y="2" width="396" height="396" rx="25" fill="none" stroke-width="4"/></svg>`;
+// Disegno: ogni zona ha il suo "strato di pittura" ritagliato sulla sua forma,
+// così il colore steso col dito non esce dai bordi. I contorni stanno sopra.
+let svgUid = 0;
+const BRUSH = 26;
+const strokeSVG = s => `<path d="${s.d}" fill="none" stroke="${s.c}" stroke-width="${BRUSH}" stroke-linecap="round" stroke-linejoin="round"/>`;
+const picSVG = (p, strokes) => {
+  const u = 'p' + (++svgUid);
+  const byRegion = p.r.map(() => []);
+  (strokes || []).forEach(s => { if (byRegion[s.i]) byRegion[s.i].push(strokeSVG(s)); });
+  const clips = p.r.map((s, i) => `<clipPath id="${u}c${i}">${s}</clipPath>`).join('');
+  // ogni zona: fondo bianco + pittura (ritagliati) e poi il suo contorno; le zone dopo coprono quelle prima
+  const layers = p.r.map((s, i) =>
+    `<g clip-path="url(#${u}c${i})">${s.replace(/^<(\w+)/, `<$1 class="r" data-i="${i}" fill="#fff" stroke="none"`)}<g class="paint" data-i="${i}">${byRegion[i].join('')}</g></g>` +
+    s.replace(/^<(\w+)/, '<$1 fill="none" stroke="#222" stroke-width="4" pointer-events="none"')).join('');
+  return `<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" stroke-linejoin="round" stroke-linecap="round">
+    <defs><clipPath id="${u}rc"><rect width="400" height="400" rx="26"/></clipPath>${clips}</defs>
+    <g clip-path="url(#${u}rc)">${layers}<g stroke="#222" stroke-width="4" fill="none" pointer-events="none">${p.lines}</g></g>
+    <rect x="2" y="2" width="396" height="396" rx="25" fill="none" stroke="#222" stroke-width="4" pointer-events="none"/></svg>`;
 };
 
 function coloring() {
@@ -232,7 +244,7 @@ function coloring() {
     app.innerHTML = '';
     const grid = el('div', 'pics');
     PICTURES.forEach(p => {
-      const b = el('button', 'pic', picSVG(p, store.get('col-' + p.id) || [], false));
+      const b = el('button', 'pic', picSVG(p, store.get('paint-' + p.id) || []));
       b.onclick = () => { sfx.pop(); paint(p); };
       grid.appendChild(b);
     });
@@ -242,10 +254,10 @@ function coloring() {
   };
   const paint = p => {
     app.innerHTML = '';
-    const fills = store.get('col-' + p.id) || [];
-    let color = PALETTE[rand(8)].c, celebrated = false;
+    let strokes = store.get('paint-' + p.id) || [];
+    let color = PALETTE[rand(8)].c;
     const wrap = el('div', 'colorer');
-    const sheet = el('div', 'sheet', picSVG(p, fills, true));
+    const sheet = el('div', 'sheet', picSVG(p, strokes));
     const cols = el('div', 'colors');
     const btns = PALETTE.map(c => {
       const b = el('button', 'c'); b.style.background = c.c; b.setAttribute('aria-label', c.n);
@@ -255,17 +267,40 @@ function coloring() {
     });
     const back = el('button', 'c pics-btn', '🖼️'); back.setAttribute('aria-label', 'Altri disegni');
     back.onclick = () => { sfx.pop(); picker(); };
-    cols.appendChild(back);
+    const clear = el('button', 'c pics-btn', '🗑️'); clear.setAttribute('aria-label', 'Ricomincia');
+    clear.onclick = () => { sfx.pop(); strokes = []; store.set('paint-' + p.id, strokes); sheet.querySelectorAll('.paint').forEach(g => g.innerHTML = ''); };
+    cols.append(back, clear);
     wrap.append(sheet, cols); app.appendChild(wrap);
+
     const svg = $('svg', sheet);
+    const regions = [...svg.querySelectorAll('.r')];
+    const layers = [...svg.querySelectorAll('.paint')];
+    const toSVG = e => { const m = svg.getScreenCTM().inverse(); return { x: Math.round((e.clientX * m.a + e.clientY * m.c + m.e) * 10) / 10, y: Math.round((e.clientX * m.b + e.clientY * m.d + m.f) * 10) / 10 }; };
+    const regionAt = pt => {
+      for (let i = regions.length - 1; i >= 0; i--) {
+        try { if (regions[i].isPointInFill(new DOMPoint(pt.x, pt.y))) return i; } catch (e) {}
+      }
+      return -1;
+    };
+    const live = new Map();
+    const save = () => { if (strokes.length > 800) strokes = strokes.slice(-800); store.set('paint-' + p.id, strokes); };
     svg.addEventListener('pointerdown', e => {
-      const r = e.target.closest('.r'); if (!r) return;
-      r.setAttribute('fill', color); fills[+r.dataset.i] = color; store.set('col-' + p.id, fills);
+      const pt = toSVG(e), i = regionAt(pt); if (i < 0) return;
+      svg.setPointerCapture(e.pointerId);
+      const s = { i, c: color, d: `M${pt.x} ${pt.y}l0 0.1` };
+      layers[i].insertAdjacentHTML('beforeend', strokeSVG(s));
+      live.set(e.pointerId, { s, node: layers[i].lastChild, last: pt });
       sfx.fill();
-      const done = p.r.every((_, i) => fills[i] && fills[i] !== '#ffffff');
-      if (done && !celebrated) { celebrated = true; setTimeout(() => { sfx.win(); confetti(40); say('Che bel disegno! Bravissimo!'); }, 300); }
     });
-    repeatFn = () => say('Scegli un colore e tocca il disegno!');
+    svg.addEventListener('pointermove', e => {
+      const L = live.get(e.pointerId); if (!L) return;
+      const pt = toSVG(e);
+      if (Math.hypot(pt.x - L.last.x, pt.y - L.last.y) < 2) return;
+      L.s.d += `L${pt.x} ${pt.y}`; L.last = pt; L.node.setAttribute('d', L.s.d);
+    });
+    const end = e => { const L = live.get(e.pointerId); if (!L) return; live.delete(e.pointerId); strokes.push(L.s); save(); };
+    svg.addEventListener('pointerup', end); svg.addEventListener('pointercancel', end);
+    repeatFn = () => say('Scegli un colore e colora con il dito!');
     repeatFn();
   };
   picker();
