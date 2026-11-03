@@ -6,4 +6,4 @@ Giochi per bambini senza pubblicità, senza tracciamento e senza link esterni. F
 - 🏀 Basket: striscia il dito per tirare a canestro
 - ⚽ Calcio: tira i rigori contro il portiere
 
-Apri: https://budali94.github.io/giochi/
+Apri: https://budali94.github.io/Giochi/
