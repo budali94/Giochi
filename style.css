@@ -1,0 +1,66 @@
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
+html, body { margin: 0; height: 100%; overflow: hidden; overscroll-behavior: none; touch-action: none; }
+body {
+  font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+  background: linear-gradient(160deg, #fff6d6 0%, #ffe1ec 50%, #d9f0ff 100%);
+  color: #333;
+}
+button { font: inherit; border: 0; cursor: pointer; color: inherit; padding: 0; }
+
+#bar {
+  position: fixed; top: 0; left: 0; right: 0; height: 84px; z-index: 5; pointer-events: none;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 10px 14px; padding-top: max(10px, env(safe-area-inset-top));
+}
+#bar > * { pointer-events: auto; }
+#bar[hidden] { display: none; }
+.round {
+  width: 68px; height: 68px; border-radius: 50%;
+  background: #fff; font-size: 36px; box-shadow: 0 4px 0 #0002;
+}
+.round:active { transform: translateY(3px); box-shadow: 0 1px 0 #0002; }
+#stars { font-size: 34px; font-weight: 900; color: #fff; text-shadow: 0 2px 0 #0004, 0 0 8px #0003; min-height: 40px; pointer-events: none; }
+
+#app { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
+
+/* Home */
+.menu { display: grid; grid-template-columns: repeat(3, 1fr); gap: 5vmin; width: min(92%, 960px); }
+@media (orientation: portrait) { .menu { grid-template-columns: 1fr; width: min(60%, 420px); } }
+.tile {
+  aspect-ratio: 1; border-radius: 36px; font-size: min(18vmin, 150px);
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 10px 0 #0002; transition: transform .1s;
+}
+.tile:active { transform: scale(.94); }
+
+/* Canvas games */
+canvas.game { position: absolute; inset: 0; width: 100%; height: 100%; touch-action: none; display: block; }
+
+/* Colorare: scelta disegno */
+.pics { position: absolute; inset: 90px 16px 16px; overflow-y: auto; touch-action: pan-y;
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(min(30vmin, 220px), 1fr)); gap: 3vmin; align-content: start; }
+.pic { aspect-ratio: 1; background: #fff; border-radius: 24px; box-shadow: 0 6px 0 #0002; padding: 6%; }
+.pic svg { width: 100%; height: 100%; pointer-events: none; }
+.pic:active { transform: scale(.95); }
+
+/* Colorare: foglio + colori di lato */
+.colorer { position: absolute; inset: 88px 12px 12px; display: flex; gap: 14px; align-items: stretch; }
+.sheet { flex: 1; min-width: 0; min-height: 0; display: flex; align-items: center; justify-content: center; }
+.sheet svg { max-width: 100%; max-height: 100%; width: 100%; height: 100%; }
+.sheet svg .r { cursor: pointer; transition: fill .15s; }
+.colors { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; align-content: center; }
+.colors .c { width: min(10vmin, 72px); height: min(10vmin, 72px); border-radius: 50%; box-shadow: 0 4px 0 #0003, inset 0 0 0 3px #0002; }
+.colors .c.sel { transform: scale(1.18); outline: 5px solid #333; outline-offset: 3px; }
+.colors .c.pics-btn { background: #fff; font-size: min(6vmin, 40px); }
+@media (orientation: portrait) {
+  .colorer { flex-direction: column; }
+  .colors { grid-template-columns: repeat(7, 1fr); justify-items: center; }
+}
+
+/* Feste */
+#party { position: fixed; inset: 0; pointer-events: none; z-index: 10; overflow: hidden; }
+.conf { position: absolute; top: -10vh; font-size: 7vmin; animation: fall 1.6s ease-in forwards; }
+@keyframes fall { to { transform: translateY(120vh) rotate(540deg); } }
+.big { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 22vmin; font-weight: 900; color: #fff;
+  text-shadow: 0 6px 0 #0005, 0 0 30px #ff0a; z-index: 9; animation: big 1.4s forwards; pointer-events: none; }
+@keyframes big { 0%{transform:scale(0) rotate(-20deg);opacity:1} 35%{transform:scale(1.1) rotate(0)} 70%{transform:scale(1);opacity:1} 100%{transform:scale(1.1);opacity:0} }
