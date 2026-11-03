@@ -1,5 +1,5 @@
-const CACHE = 'giochi-v3';
-const FILES = ['./', 'index.html', 'style.css', 'app.js', 'manifest.json', 'icons/icon-192.png', 'icons/icon-512.png'];
+const CACHE = 'giochi-v4';
+const FILES = ['./', 'index.html', 'style.css', 'app.js', 'pictures.js', 'manifest.json', 'icons/icon-192.png', 'icons/icon-512.png'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting()));
