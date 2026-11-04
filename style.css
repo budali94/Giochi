@@ -24,14 +24,22 @@ button { font: inherit; border: 0; cursor: pointer; color: inherit; padding: 0; 
 #app { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
 
 /* Home */
-.menu { display: grid; grid-template-columns: repeat(3, 1fr); gap: 5vmin; width: min(92%, 960px); }
-@media (orientation: portrait) { .menu { grid-template-columns: 1fr; width: min(60%, 420px); } }
+.menu { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4vmin; width: min(94%, 1100px); }
+@media (orientation: portrait) { .menu { grid-template-columns: repeat(2, 1fr); width: min(84%, 560px); } }
 .tile {
   aspect-ratio: 1; border-radius: 36px; font-size: min(18vmin, 150px);
   display: flex; align-items: center; justify-content: center;
   box-shadow: 0 10px 0 #0002; transition: transform .1s;
 }
 .tile:active { transform: scale(.94); }
+
+/* Scelta del campione */
+.pick { position: absolute; inset: 90px 16px 16px; display: flex; gap: 5vmin; align-items: center; justify-content: center; }
+.pick-card { width: min(40vw, 48vh, 380px); aspect-ratio: 3 / 4; background: #fff; border-radius: 28px; overflow: hidden; box-shadow: 0 8px 0 #0002; display: flex; flex-direction: column; }
+.pick-card canvas { flex: 1; width: 100%; min-height: 0; display: block; }
+.pick-name { font-size: min(6vmin, 40px); font-weight: 900; padding: 10px 0 14px; letter-spacing: 2px; }
+.pick-card:active { transform: scale(.96); }
+@media (orientation: portrait) { .pick { flex-direction: column; } .pick-card { width: min(60vw, 34vh, 380px); } }
 
 /* Canvas games */
 canvas.game { position: absolute; inset: 0; width: 100%; height: 100%; touch-action: none; display: block; }

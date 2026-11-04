@@ -91,6 +91,7 @@ const GAMES = [
   { icon: '🎨', bg: '#ff9ec0', run: coloring, name: 'Colora' },
   { icon: '🏀', bg: '#ffb366', run: basket, name: 'Basket' },
   { icon: '⚽', bg: '#8fe08f', run: soccer, name: 'Calcio' },
+  { icon: '🥅', bg: '#7fc8ff', run: () => duel(), name: 'Uno contro uno' },
 ];
 
 function home() {
@@ -309,7 +310,7 @@ function coloring() {
 /* =========================================================
    Base comune per i giochi su canvas
    ========================================================= */
-function canvasGame({ init, resize, update, draw, down, up }) {
+function canvasGame({ init, resize, update, draw, down, up, move }) {
   const cv = el('canvas', 'game'); app.appendChild(cv);
   const ctx = cv.getContext('2d');
   const S = { W: 0, H: 0, ctx, t: 0 };
@@ -329,7 +330,8 @@ function canvasGame({ init, resize, update, draw, down, up }) {
   raf = requestAnimationFrame(loop);
   const pos = e => { const r = cv.getBoundingClientRect(); return { x: e.clientX - r.left, y: e.clientY - r.top, time: performance.now() }; };
   cv.addEventListener('pointerdown', e => { cv.setPointerCapture(e.pointerId); ptr = { start: pos(e), id: e.pointerId }; down && down(S, ptr.start); });
-  cv.addEventListener('pointerup', e => { if (!ptr || ptr.id !== e.pointerId) return; const end = pos(e); up(S, ptr.start, end); ptr = null; });
+  cv.addEventListener('pointermove', e => { if (move && ptr && ptr.id === e.pointerId) move(S, pos(e)); });
+  cv.addEventListener('pointerup', e => { if (!ptr || ptr.id !== e.pointerId) return; const end = pos(e); up && up(S, ptr.start, end); ptr = null; });
   cv.addEventListener('pointercancel', () => { ptr = null; });
   addEventListener('resize', fit);
   cleanup = () => { cancelAnimationFrame(raf); removeEventListener('resize', fit); };
