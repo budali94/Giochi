@@ -46,6 +46,7 @@ Foto dei giocatori da Wikimedia Commons, ritagliate e ridimensionate. Ogni foto 
 | Marcus Rashford | Bryan Berlin | CC BY-SA 4.0 | [Marcus_Rashford_England_v_Panama_27_June_26-047.jpg](https://commons.wikimedia.org/wiki/File:Marcus_Rashford_England_v_Panama_27_June_26-047.jpg) |
 | Declan Rice | Bryan Berlin | CC BY-SA 4.0 | [Declan_Rice_England_v_Ghana_23_June_2026-150.jpg](https://commons.wikimedia.org/wiki/File:Declan_Rice_England_v_Ghana_23_June_2026-150.jpg) |
 | Rodri | Bryan Berlin | CC BY-SA 4.0 | [Rodri_Argentina_v_Spain_19_July_2026-187_(cropped).jpg](https://commons.wikimedia.org/wiki/File:Rodri_Argentina_v_Spain_19_July_2026-187_(cropped).jpg) |
+| Cristiano Ronaldo | Bryan Berlin | CC BY-SA 4.0 | [Cristiano_Ronaldo_Croatia_v_Portugal_2_July_2026-075_(cropped).jpg](https://commons.wikimedia.org/wiki/File:Cristiano_Ronaldo_Croatia_v_Portugal_2_July_2026-075_(cropped).jpg) |
 | Bukayo Saka | Bryan Berlin | CC BY-SA 4.0 | [Bukayo_Saka_England_v_Panama_27_June_26-108_(cropped).jpg](https://commons.wikimedia.org/wiki/File:Bukayo_Saka_England_v_Panama_27_June_26-108_(cropped).jpg) |
 | Mohamed Salah | Bryan Berlin | CC BY-SA 4.0 | [Mohamed_Salah_Argentina_v_Egypt_7_July_2026-163_(cropped).jpg](https://commons.wikimedia.org/wiki/File:Mohamed_Salah_Argentina_v_Egypt_7_July_2026-163_(cropped).jpg) |
 | Marcus Thuram | Bryan Berlin | CC BY-SA 4.0 | [Marcus_Thuram_France_v_Senegal_16_June_2026-261_(cropped).jpg](https://commons.wikimedia.org/wiki/File:Marcus_Thuram_France_v_Senegal_16_June_2026-261_(cropped).jpg) |

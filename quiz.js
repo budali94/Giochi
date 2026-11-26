@@ -25,7 +25,7 @@ const QUIZ_TEAMS = {
   galatasaray: { name: 'Galatasaray', art: 'il ', prep: 'nel ' },
   trabzonspor: { name: 'Trabzonspor', art: 'il ', prep: 'nel ' },
   miami: { name: 'Inter Miami', art: "l'", prep: "nell'" },
-  // alnassr: { name: 'Al Nassr', art: "l'", prep: "nell'" }, // stemma in arrivo
+  alnassr: { name: 'Al Nassr', art: "l'", prep: "nell'" },
 };
 
 // [id foto, nome detto dalla voce, squadra]
@@ -48,7 +48,8 @@ const QUIZ_PLAYERS = [
   ['leao', 'Leão', 'galatasaray'],
   ['salah', 'Salah', 'trabzonspor'],
   ['messi', 'Messi', 'miami'],
-  // foto in arrivo: ['kolomuani', 'Kolo Muani', 'juve'], ['vicario', 'Vicario', 'juve'], ['suarez', 'Suárez', 'miami'], ['ronaldo', 'Cristiano Ronaldo', 'alnassr']
+  ['ronaldo', 'Cristiano Ronaldo', 'alnassr'],
+  // foto in arrivo: ['kolomuani', 'Kolo Muani', 'juve'], ['vicario', 'Vicario', 'juve'], ['suarez', 'Suárez', 'miami']
 ].map(([id, name, team]) => ({ id, name, team }));
 
 const quizPhoto = id => `quiz/foto/${id}.jpg`;
