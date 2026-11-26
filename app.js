@@ -92,6 +92,7 @@ const GAMES = [
   { icon: '🏀', bg: '#ffb366', run: basket, name: 'Basket' },
   { icon: '⚽', bg: '#8fe08f', run: soccer, name: 'Calcio' },
   { icon: '🥅', bg: '#7fc8ff', run: () => duel(), name: 'Uno contro uno' },
+  { icon: '🌟', bg: '#c9a7ff', run: () => quiz(), name: 'Quiz calciatori' },
 ];
 
 function home() {
