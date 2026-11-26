@@ -36,14 +36,19 @@ const QUIZ_PLAYERS = [
   ['haaland', 'Haaland', 'city'], ['foden', 'Foden', 'city'], ['donnarumma', 'Donnarumma', 'city'], ['bouaddi', 'Bouaddi', 'city'],
   ['wirtz', 'Wirtz', 'liverpool'], ['isak', 'Isak', 'liverpool'], ['vandijk', 'Van Dijk', 'liverpool'],
   ['saka', 'Saka', 'arsenal'], ['odegaard', 'Ødegaard', 'arsenal'], ['rice', 'Rice', 'arsenal'], ['gyokeres', 'Gyökeres', 'arsenal'],
-  ['palmer', 'Palmer', 'chelsea'], ['estevao', 'Estêvão', 'chelsea'],
-  ['rashford', 'Rashford', 'united'], ['cunha', 'Cunha', 'united'],
+  ['palmer', 'Palmer', 'chelsea'], ['estevao', 'Estêvão', 'chelsea'], ['caicedo', 'Caicedo', 'chelsea'],
+  ['rashford', 'Rashford', 'united'], ['cunha', 'Cunha', 'united'], ['bruno', 'Bruno Fernandes', 'united'],
   ['kane', 'Kane', 'bayern'], ['musiala', 'Musiala', 'bayern'], ['olise', 'Olise', 'bayern'], ['neuer', 'Neuer', 'bayern'],
   ['dembele', 'Dembélé', 'psg'], ['kvara', 'Kvaratskhelia', 'psg'], ['hakimi', 'Hakimi', 'psg'], ['ferran', 'Ferran Torres', 'psg'],
   ['lautaro', 'Lautaro', 'inter'], ['thuram', 'Thuram', 'inter'], ['barella', 'Barella', 'inter'],
   ['modric', 'Modric', 'milan'], ['pulisic', 'Pulisic', 'milan'], ['maignan', 'Maignan', 'milan'], ['ramos', 'Gonçalo Ramos', 'milan'],
   ['yildiz', 'Yildiz', 'juve'], ['woltemade', 'Woltemade', 'juve'],
-  // foto in arrivo: ['kolomuani', 'Kolo Muani', 'juve'], ['caicedo', 'Caicedo', 'chelsea'], ['bruno', 'Bruno Fernandes', 'united'], ['vicario', 'Vicario', 'juve'], ['debruyne', 'De Bruyne', 'napoli'], ['mctominay', 'McTominay', 'napoli'], ['dybala', 'Dybala', 'roma'], ['leao', 'Leão', 'galatasaray'], ['salah', 'Salah', 'trabzonspor'], ['messi', 'Messi', 'miami'], ['suarez', 'Suárez', 'miami'], ['ronaldo', 'Cristiano Ronaldo', 'alnassr']
+  ['debruyne', 'De Bruyne', 'napoli'], ['mctominay', 'McTominay', 'napoli'],
+  ['dybala', 'Dybala', 'roma'],
+  ['leao', 'Leão', 'galatasaray'],
+  ['salah', 'Salah', 'trabzonspor'],
+  ['messi', 'Messi', 'miami'],
+  // foto in arrivo: ['kolomuani', 'Kolo Muani', 'juve'], ['vicario', 'Vicario', 'juve'], ['suarez', 'Suárez', 'miami'], ['ronaldo', 'Cristiano Ronaldo', 'alnassr']
 ].map(([id, name, team]) => ({ id, name, team }));
 
 const quizPhoto = id => `quiz/foto/${id}.jpg`;

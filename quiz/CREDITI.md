@@ -8,11 +8,15 @@ Foto dei giocatori da Wikimedia Commons, ritagliate e ridimensionate. Ogni foto 
 | Nicolò Barella | Biser Todorov | CC BY 4.0 | [Nicolò_Barella_in_2021_(cropped_2).jpg](https://commons.wikimedia.org/wiki/File:Nicol%C3%B2_Barella_in_2021_(cropped_2).jpg) |
 | Jude Bellingham | Bryan Berlin | CC BY-SA 4.0 | [Jude_Bellingham_England_v_Ghana_23_June_2026-061.jpg](https://commons.wikimedia.org/wiki/File:Jude_Bellingham_England_v_Ghana_23_June_2026-061.jpg) |
 | Ayyoub Bouaddi | Bryan Berlin | CC BY-SA 4.0 | [Ayyoub_Bouaddi_Morocco_v_Norway_7_June_2026-71.jpg](https://commons.wikimedia.org/wiki/File:Ayyoub_Bouaddi_Morocco_v_Norway_7_June_2026-71.jpg) |
+| Bruno Fernandes | Bryan Berlin | CC BY-SA 4.0 | [Bruno_Fernandes_USMNT_v_Portugal_Mar_31_2026-27.jpg](https://commons.wikimedia.org/wiki/File:Bruno_Fernandes_USMNT_v_Portugal_Mar_31_2026-27.jpg) |
+| Moisés Caicedo | Timmy96 | CC0 | [Moisés_Caicedo_20042025_(1).jpg](https://commons.wikimedia.org/wiki/File:Mois%C3%A9s_Caicedo_20042025_(1).jpg) |
 | Thibaut Courtois | Bryan Berlin | CC BY-SA 4.0 | [Thibaut_Courtois_Belgium_v_USA_6_July_2026-076_(cropped).jpg](https://commons.wikimedia.org/wiki/File:Thibaut_Courtois_Belgium_v_USA_6_July_2026-076_(cropped).jpg) |
 | Matheus Cunha | Bryan Berlin | CC BY-SA 4.0 | [Matheus_Cunha_Brazil_V_Morocco_13_June_2026-178_(cropped).jpg](https://commons.wikimedia.org/wiki/File:Matheus_Cunha_Brazil_V_Morocco_13_June_2026-178_(cropped).jpg) |
+| Kevin De Bruyne | Bryan Berlin | CC BY-SA 4.0 | [Kevin_De_Bruyne_USMNT_v_Belgium_Mar_28_2026-64_(cropped).jpg](https://commons.wikimedia.org/wiki/File:Kevin_De_Bruyne_USMNT_v_Belgium_Mar_28_2026-64_(cropped).jpg) |
 | Ousmane Dembélé | Bryan Berlin | CC BY-SA 4.0 | [Ousmane_Dembele_France_v_Senegal_16_June_2026-341_(cropped).jpg](https://commons.wikimedia.org/wiki/File:Ousmane_Dembele_France_v_Senegal_16_June_2026-341_(cropped).jpg) |
 | Yan Diomande | Bryan Berlin | CC BY-SA 4.0 | [Yan_Diomande_Cote_D'Ivoire_v_Ecuador_14_June_2026-17_(cropped).jpg](https://commons.wikimedia.org/wiki/File:Yan_Diomande_Cote_D%27Ivoire_v_Ecuador_14_June_2026-17_(cropped).jpg) |
 | Gianluigi Donnarumma | Originale: MichaelEmilio / Opera derivata: Danyele | CC BY 4.0 | [Norway_Italy_-_June_2025_B_33_-_Gianluigi_Donnarumma_(close-up).jpg](https://commons.wikimedia.org/wiki/File:Norway_Italy_-_June_2025_B_33_-_Gianluigi_Donnarumma_(close-up).jpg) |
+| Paulo Dybala | Voltmetro | CC BY-SA 4.0 | [2017_FRIENDLY_MATCH_RUSSIA_v_ARGENTINA_-_Paulo_Dybala_01.jpg](https://commons.wikimedia.org/wiki/File:2017_FRIENDLY_MATCH_RUSSIA_v_ARGENTINA_-_Paulo_Dybala_01.jpg) |
 | Estêvão | NullReason | CC BY-SA 4.0 | [Estevao-Palmeiras-Liverpool-abr24_(cropped).jpg](https://commons.wikimedia.org/wiki/File:Estevao-Palmeiras-Liverpool-abr24_(cropped).jpg) |
 | Ferran Torres | Bryan Berlin | CC BY-SA 4.0 | [Ferran_Torres_France_v_Spain_7.24.26-243_(cropped).jpg](https://commons.wikimedia.org/wiki/File:Ferran_Torres_France_v_Spain_7.24.26-243_(cropped).jpg) |
 | Phil Foden | Steffen Prößdorf | CC BY-SA 4.0 | [2023-10-04_Fußball,_Männer,_UEFA_Champions_League,_RB_Leipzig_-_Manchester_City_FC_1DX_2613,_Phil_Foden.jpg](https://commons.wikimedia.org/wiki/File:2023-10-04_Fu%C3%9Fball,_M%C3%A4nner,_UEFA_Champions_League,_RB_Leipzig_-_Manchester_City_FC_1DX_2613,_Phil_Foden.jpg) |
@@ -23,8 +27,11 @@ Foto dei giocatori da Wikimedia Commons, ritagliate e ridimensionate. Ogni foto 
 | Harry Kane | Bryan Berlin | CC BY-SA 4.0 | [Harry_Kane_England_v_Ghana_23_June_2026-219_(cropped).jpg](https://commons.wikimedia.org/wiki/File:Harry_Kane_England_v_Ghana_23_June_2026-219_(cropped).jpg) |
 | Khvicha Kvaratskhelia | Paté kroute | CC0 | [Kvaratskhelia_asse_psg_2425.png](https://commons.wikimedia.org/wiki/File:Kvaratskhelia_asse_psg_2425.png) |
 | Lautaro Martínez | Bryan Berlin | CC BY-SA 4.0 | [Lautaro_Martinez_Argentina_v_Spain_19_July_2026-049_(cropped).jpg](https://commons.wikimedia.org/wiki/File:Lautaro_Martinez_Argentina_v_Spain_19_July_2026-049_(cropped).jpg) |
+| Rafael Leão | Bryan Berlin | CC BY-SA 4.0 | [Rafael_Leao_Croatia_v_Portugal_2_July_2026-187_(cropped).jpg](https://commons.wikimedia.org/wiki/File:Rafael_Leao_Croatia_v_Portugal_2_July_2026-187_(cropped).jpg) |
 | Mike Maignan | Bryan Berlin | CC BY-SA 4.0 | [Mike_Maignan_France_v_Norway_26_June_26-132_(cropped).jpg](https://commons.wikimedia.org/wiki/File:Mike_Maignan_France_v_Norway_26_June_26-132_(cropped).jpg) |
 | Kylian Mbappé | Bryan Berlin | CC BY-SA 4.0 | [Kylian_Mbappe_France_v_Senegal_16_June_2026-391_(cropped).jpg](https://commons.wikimedia.org/wiki/File:Kylian_Mbappe_France_v_Senegal_16_June_2026-391_(cropped).jpg) |
+| Scott McTominay | Bryan Berlin | CC BY-SA 4.0 | [Scott_McTominay_Scotland_v_Bolivia_6_June_2026-41.jpg](https://commons.wikimedia.org/wiki/File:Scott_McTominay_Scotland_v_Bolivia_6_June_2026-41.jpg) |
+| Lionel Messi | Bryan Berlin | CC BY-SA 4.0 | [Leo_Messi_Argentina_v_Egypt_7_July_2026-1.jpg](https://commons.wikimedia.org/wiki/File:Leo_Messi_Argentina_v_Egypt_7_July_2026-1.jpg) |
 | Luka Modrić | Bryan Berlin | CC BY-SA 4.0 | [Luka_Modric_Croatia_v_Portugal_2_July_2026-055.jpg](https://commons.wikimedia.org/wiki/File:Luka_Modric_Croatia_v_Portugal_2_July_2026-055.jpg) |
 | Jamal Musiala | Bryan Berlin | CC BY-SA 4.0 | [Jamal_Musiala_Ecuador_v_Germany_25_June_2026-174_(cropped).jpg](https://commons.wikimedia.org/wiki/File:Jamal_Musiala_Ecuador_v_Germany_25_June_2026-174_(cropped).jpg) |
 | Manuel Neuer | Bryan Berlin | CC BY-SA 4.0 | [Manuel_Neuer_Ecuador_v_Germany_25_June_2026-148.jpg](https://commons.wikimedia.org/wiki/File:Manuel_Neuer_Ecuador_v_Germany_25_June_2026-148.jpg) |
@@ -40,6 +47,7 @@ Foto dei giocatori da Wikimedia Commons, ritagliate e ridimensionate. Ogni foto 
 | Declan Rice | Bryan Berlin | CC BY-SA 4.0 | [Declan_Rice_England_v_Ghana_23_June_2026-150.jpg](https://commons.wikimedia.org/wiki/File:Declan_Rice_England_v_Ghana_23_June_2026-150.jpg) |
 | Rodri | Bryan Berlin | CC BY-SA 4.0 | [Rodri_Argentina_v_Spain_19_July_2026-187_(cropped).jpg](https://commons.wikimedia.org/wiki/File:Rodri_Argentina_v_Spain_19_July_2026-187_(cropped).jpg) |
 | Bukayo Saka | Bryan Berlin | CC BY-SA 4.0 | [Bukayo_Saka_England_v_Panama_27_June_26-108_(cropped).jpg](https://commons.wikimedia.org/wiki/File:Bukayo_Saka_England_v_Panama_27_June_26-108_(cropped).jpg) |
+| Mohamed Salah | Bryan Berlin | CC BY-SA 4.0 | [Mohamed_Salah_Argentina_v_Egypt_7_July_2026-163_(cropped).jpg](https://commons.wikimedia.org/wiki/File:Mohamed_Salah_Argentina_v_Egypt_7_July_2026-163_(cropped).jpg) |
 | Marcus Thuram | Bryan Berlin | CC BY-SA 4.0 | [Marcus_Thuram_France_v_Senegal_16_June_2026-261_(cropped).jpg](https://commons.wikimedia.org/wiki/File:Marcus_Thuram_France_v_Senegal_16_June_2026-261_(cropped).jpg) |
 | Virgil van Dijk | Ailura | CC BY-SA 3.0 at | [20160604_AUT_NED_8876_(cropped).jpg](https://commons.wikimedia.org/wiki/File:20160604_AUT_NED_8876_(cropped).jpg) |
 | Vinícius Júnior | Bryan Berlin | CC BY-SA 4.0 | [Vinícius_Júnior_Brazil_V_Morocco_13_June_2026-207_(cropped).jpg](https://commons.wikimedia.org/wiki/File:Vin%C3%ADcius_J%C3%BAnior_Brazil_V_Morocco_13_June_2026-207_(cropped).jpg) |
