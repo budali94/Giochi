@@ -1,4 +1,4 @@
-const CACHE = 'giochi-v6';
+const CACHE = 'giochi-v7';
 const FILES = [
   "./",
   "index.html",
@@ -55,6 +55,7 @@ const FILES = [
   "quiz/foto/ronaldo.jpg",
   "quiz/foto/saka.jpg",
   "quiz/foto/salah.jpg",
+  "quiz/foto/suarez.jpg",
   "quiz/foto/thuram.jpg",
   "quiz/foto/vandijk.jpg",
   "quiz/foto/vinicius.jpg",

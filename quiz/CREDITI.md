@@ -49,6 +49,7 @@ Foto dei giocatori da Wikimedia Commons, ritagliate e ridimensionate. Ogni foto 
 | Cristiano Ronaldo | Bryan Berlin | CC BY-SA 4.0 | [Cristiano_Ronaldo_Croatia_v_Portugal_2_July_2026-075_(cropped).jpg](https://commons.wikimedia.org/wiki/File:Cristiano_Ronaldo_Croatia_v_Portugal_2_July_2026-075_(cropped).jpg) |
 | Bukayo Saka | Bryan Berlin | CC BY-SA 4.0 | [Bukayo_Saka_England_v_Panama_27_June_26-108_(cropped).jpg](https://commons.wikimedia.org/wiki/File:Bukayo_Saka_England_v_Panama_27_June_26-108_(cropped).jpg) |
 | Mohamed Salah | Bryan Berlin | CC BY-SA 4.0 | [Mohamed_Salah_Argentina_v_Egypt_7_July_2026-163_(cropped).jpg](https://commons.wikimedia.org/wiki/File:Mohamed_Salah_Argentina_v_Egypt_7_July_2026-163_(cropped).jpg) |
+| Luis Suárez | Какая то женщина | CC BY-SA 3.0 | [Luis_Suárez_2018.jpg](https://commons.wikimedia.org/wiki/File:Luis_Su%C3%A1rez_2018.jpg) |
 | Marcus Thuram | Bryan Berlin | CC BY-SA 4.0 | [Marcus_Thuram_France_v_Senegal_16_June_2026-261_(cropped).jpg](https://commons.wikimedia.org/wiki/File:Marcus_Thuram_France_v_Senegal_16_June_2026-261_(cropped).jpg) |
 | Virgil van Dijk | Ailura | CC BY-SA 3.0 at | [20160604_AUT_NED_8876_(cropped).jpg](https://commons.wikimedia.org/wiki/File:20160604_AUT_NED_8876_(cropped).jpg) |
 | Vinícius Júnior | Bryan Berlin | CC BY-SA 4.0 | [Vinícius_Júnior_Brazil_V_Morocco_13_June_2026-207_(cropped).jpg](https://commons.wikimedia.org/wiki/File:Vin%C3%ADcius_J%C3%BAnior_Brazil_V_Morocco_13_June_2026-207_(cropped).jpg) |
