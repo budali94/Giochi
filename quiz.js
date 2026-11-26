@@ -25,31 +25,25 @@ const QUIZ_TEAMS = {
   galatasaray: { name: 'Galatasaray', art: 'il ', prep: 'nel ' },
   trabzonspor: { name: 'Trabzonspor', art: 'il ', prep: 'nel ' },
   miami: { name: 'Inter Miami', art: "l'", prep: "nell'" },
-  alnassr: { name: 'Al Nassr', art: "l'", prep: "nell'" },
+  // alnassr: { name: 'Al Nassr', art: "l'", prep: "nell'" }, // stemma in arrivo
 };
 
 // [id foto, nome detto dalla voce, squadra]
 const QUIZ_PLAYERS = [
-  ['mbappe', 'Mbappé', 'real'], ['vinicius', 'Vinícius', 'real'], ['bellingham', 'Bellingham', 'real'],
-  ['diomande', 'Diomande', 'real'], ['courtois', 'Courtois', 'real'],
+  ['mbappe', 'Mbappé', 'real'], ['vinicius', 'Vinícius', 'real'], ['bellingham', 'Bellingham', 'real'], ['diomande', 'Diomande', 'real'], ['courtois', 'Courtois', 'real'],
   ['yamal', 'Lamine Yamal', 'barca'], ['raphinha', 'Raphinha', 'barca'], ['pedri', 'Pedri', 'barca'], ['rodri', 'Rodri', 'barca'],
   ['alvarez', 'Julián Álvarez', 'atletico'], ['oblak', 'Oblak', 'atletico'],
   ['haaland', 'Haaland', 'city'], ['foden', 'Foden', 'city'], ['donnarumma', 'Donnarumma', 'city'], ['bouaddi', 'Bouaddi', 'city'],
   ['wirtz', 'Wirtz', 'liverpool'], ['isak', 'Isak', 'liverpool'], ['vandijk', 'Van Dijk', 'liverpool'],
   ['saka', 'Saka', 'arsenal'], ['odegaard', 'Ødegaard', 'arsenal'], ['rice', 'Rice', 'arsenal'], ['gyokeres', 'Gyökeres', 'arsenal'],
-  ['palmer', 'Palmer', 'chelsea'], ['caicedo', 'Caicedo', 'chelsea'], ['estevao', 'Estêvão', 'chelsea'],
-  ['bruno', 'Bruno Fernandes', 'united'], ['rashford', 'Rashford', 'united'], ['cunha', 'Cunha', 'united'],
+  ['palmer', 'Palmer', 'chelsea'], ['estevao', 'Estêvão', 'chelsea'],
+  ['rashford', 'Rashford', 'united'], ['cunha', 'Cunha', 'united'],
   ['kane', 'Kane', 'bayern'], ['musiala', 'Musiala', 'bayern'], ['olise', 'Olise', 'bayern'], ['neuer', 'Neuer', 'bayern'],
   ['dembele', 'Dembélé', 'psg'], ['kvara', 'Kvaratskhelia', 'psg'], ['hakimi', 'Hakimi', 'psg'], ['ferran', 'Ferran Torres', 'psg'],
   ['lautaro', 'Lautaro', 'inter'], ['thuram', 'Thuram', 'inter'], ['barella', 'Barella', 'inter'],
   ['modric', 'Modric', 'milan'], ['pulisic', 'Pulisic', 'milan'], ['maignan', 'Maignan', 'milan'], ['ramos', 'Gonçalo Ramos', 'milan'],
-  ['yildiz', 'Yildiz', 'juve'], ['woltemade', 'Woltemade', 'juve'], ['kolomuani', 'Kolo Muani', 'juve'], ['vicario', 'Vicario', 'juve'],
-  ['debruyne', 'De Bruyne', 'napoli'], ['mctominay', 'McTominay', 'napoli'],
-  ['dybala', 'Dybala', 'roma'],
-  ['leao', 'Leão', 'galatasaray'],
-  ['salah', 'Salah', 'trabzonspor'],
-  ['messi', 'Messi', 'miami'], ['suarez', 'Suárez', 'miami'],
-  ['ronaldo', 'Cristiano Ronaldo', 'alnassr'],
+  ['yildiz', 'Yildiz', 'juve'], ['woltemade', 'Woltemade', 'juve'],
+  // foto in arrivo: ['kolomuani', 'Kolo Muani', 'juve'], ['caicedo', 'Caicedo', 'chelsea'], ['bruno', 'Bruno Fernandes', 'united'], ['vicario', 'Vicario', 'juve'], ['debruyne', 'De Bruyne', 'napoli'], ['mctominay', 'McTominay', 'napoli'], ['dybala', 'Dybala', 'roma'], ['leao', 'Leão', 'galatasaray'], ['salah', 'Salah', 'trabzonspor'], ['messi', 'Messi', 'miami'], ['suarez', 'Suárez', 'miami'], ['ronaldo', 'Cristiano Ronaldo', 'alnassr']
 ].map(([id, name, team]) => ({ id, name, team }));
 
 const quizPhoto = id => `quiz/foto/${id}.jpg`;
