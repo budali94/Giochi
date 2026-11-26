@@ -47,9 +47,9 @@ const QUIZ_PLAYERS = [
   ['dybala', 'Dybala', 'roma'],
   ['leao', 'Leão', 'galatasaray'],
   ['salah', 'Salah', 'trabzonspor'],
-  ['messi', 'Messi', 'miami'],
+  ['messi', 'Messi', 'miami'], ['suarez', 'Suárez', 'miami'],
   ['ronaldo', 'Cristiano Ronaldo', 'alnassr'],
-  // foto in arrivo: ['kolomuani', 'Kolo Muani', 'juve'], ['vicario', 'Vicario', 'juve'], ['suarez', 'Suárez', 'miami']
+  // senza una foto libera buona per ora: ['kolomuani', 'Kolo Muani', 'juve'], ['vicario', 'Vicario', 'juve']
 ].map(([id, name, team]) => ({ id, name, team }));
 
 const quizPhoto = id => `quiz/foto/${id}.jpg`;
